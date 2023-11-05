@@ -35,7 +35,9 @@ const Contact = () => {
             </button>
             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-white rounded-box w-52">
               <li>
-                <a className="flex justify-center">Home</a>
+                <a className="flex justify-center" onClick={() => navigate("/")}>
+                  Home
+                </a>
               </li>
               <li>
                 <a className="flex justify-center" onClick={() => navigate("/product")}>
