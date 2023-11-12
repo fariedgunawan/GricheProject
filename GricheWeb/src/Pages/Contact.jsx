@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.css";
 import call from "../assets/call.png";
 import pickup from "../assets/pickup.png";
+import instagram from "../assets/instagram.png";
 import { useNavigate } from "react-router-dom";
 const Contact = () => {
   const navigate = useNavigate();
@@ -19,7 +20,9 @@ const Contact = () => {
           <h2 className="cursor-pointer hover:font-bold" onClick={() => navigate("/product")}>
             Product
           </h2>
-          <h2 className="cursor-pointer hover:font-bold">Packaging</h2>
+          <h2 className="cursor-pointer hover:font-bold" onClick={() => navigate("/gallery")}>
+            Gallery
+          </h2>
         </div>
         <div className="nav-right hidden sm:flex">
           <button className="px-[15px] py-[10px] border-2 rounded-lg text-[16px] font-semibold text-white bg-[#723D0F] hover:bg-transparent hover:border-[#723D0F] hover:text-[#723D0F]" onClick={() => navigate("/contact")}>
@@ -45,7 +48,9 @@ const Contact = () => {
                 </a>
               </li>
               <li>
-                <a className="flex justify-center">Packaging</a>
+                <a className="flex justify-center" onClick={() => navigate("/gallery")}>
+                  Gallery
+                </a>
               </li>
               <li>
                 <a className="flex justify-center bg-[#723D0F] text-white" onClick={() => navigate("/contact")}>
@@ -64,10 +69,10 @@ const Contact = () => {
         <div className="hero-content flex-col flex items-center mt-[50px] drop-shadow-2xl">
           <div className="card-1 flex flex-col items-center bg-[#723D0F] px-[40px] py-[25px] rounded-lg text-white">
             <img src={call} />
-            <h2 className="text-[20px] font-bold mt-[10px]">Pre-Order</h2>
-            <h2 className="font-semibold mt-[10px]">Senin - Jumat</h2>
-            <h2>6.30 - 17.30</h2>
-            <button className="mt-[20px] px-[20px] py-[10px] bg-[#01AE9A] text-white rounded-xl font-semibold">WhatsApp</button>
+            <h2 className="font-semibold mt-4">Faried Gunawan</h2>
+            <button className="mt-[20px] px-[20px] py-[10px] bg-[#01AE9A] text-white rounded-xl font-semibold" onClick={() => (window.location.href = "https://wa.me/6281389214045")}>
+              WhatsApp
+            </button>
           </div>
           <div className="card-2"></div>
         </div>
@@ -75,10 +80,10 @@ const Contact = () => {
         <div className="hero-content flex-col flex items-center mt-[50px] drop-shadow-2xl">
           <div className="card-1 flex flex-col items-center bg-[#723D0F] px-[40px] py-[25px] rounded-lg text-white">
             <img src={call} />
-            <h2 className="text-[20px] font-bold mt-[10px]">Event</h2>
-            <h2 className="font-semibold mt-[10px]">Up Coming</h2>
-            <h2>Up Coming</h2>
-            <button className="mt-[20px] px-[20px] py-[10px] bg-[#01AE9A] text-white rounded-xl font-semibold">WhatsApp</button>
+            <h2 className="font-semibold mt-4">Hafidz Kamaludin</h2>
+            <button className="mt-[20px] px-[20px] py-[10px] bg-[#01AE9A] text-white rounded-xl font-semibold" onClick={() => (window.location.href = "https://wa.me/6285659869542")}>
+              WhatsApp
+            </button>
           </div>
           <div className="card-2"></div>
         </div>
@@ -86,8 +91,10 @@ const Contact = () => {
 
       {/*info Pickup */}
       <div className="info-pickup flex flex-col items-center mt-[60px] px-[50px] pb-[60px] sm:flex-row sm:justify-center sm:gap-[100px] sm:mt-[80px]">
-        <img src={pickup} className="w-[150px] sm:w-[200px]" />
-        <h2 className="text-[#723D0F] text-center w-[300px] mt-[30px] text-[16px] font-semibold sm:text-left sm:text-[20px] sm:w-[400px]">Menerima Pesanan Siap Antar Dalam Telkom University</h2>
+        <img src={instagram} className="w-[60px] sm:w-[100px]" />
+        <button className="px-[30px] py-[5px] border-2 mt-[30px] rounded-md font-bold text-[25px]  text-[#723D0F] sm:mt-0 sm:px-[30px] sm:py-[15px]" onClick={() => (window.location.href = "https://www.instagram.com/thegriche/")}>
+          Visit
+        </button>
       </div>
       {/*end info Pickup */}
       {/*end Content */}

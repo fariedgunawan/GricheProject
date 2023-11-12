@@ -19,7 +19,9 @@ const Product = () => {
           <h2 className="cursor-pointer hover:font-bold" onClick={() => navigate("/product")}>
             Product
           </h2>
-          <h2 className="cursor-pointer hover:font-bold">Packaging</h2>
+          <h2 className="cursor-pointer hover:font-bold" onClick={() => navigate("/gallery")}>
+            Gallery
+          </h2>
         </div>
         <div className="nav-right hidden sm:flex">
           <button className="px-[15px] py-[10px] border-2 rounded-lg text-[16px] font-semibold text-white bg-[#723D0F] hover:bg-transparent hover:border-[#723D0F] hover:text-[#723D0F]" onClick={() => navigate("/contact")}>
@@ -45,7 +47,9 @@ const Product = () => {
                 </a>
               </li>
               <li>
-                <a className="flex justify-center">Packaging</a>
+                <a className="flex justify-center" onClick={() => navigate("/gallery")}>
+                  Gallery
+                </a>
               </li>
               <li>
                 <a className="flex justify-center bg-[#723D0F] text-white" onClick={() => navigate("/contact")}>
@@ -73,7 +77,10 @@ const Product = () => {
             </span>
             IDR 8k
           </h2>
-          <button className="px-[10px] py-[10px] border-2 border-[#683824] rounded-md text-[#683824] font-semibold mt-[10px] flex items-center gap-[10px] sm:mt-[30px] sm:text-[20px]" onClick={() => navigate("/contact")}>
+          <button
+            className="px-[10px] py-[10px] border-2 border-[#683824] rounded-md text-[#683824] font-semibold mt-[10px] flex items-center gap-[10px] sm:mt-[30px] sm:text-[20px]"
+            onClick={() => (window.location.href = "https://forms.gle/WsCEmCbTMfvhFU3g8")}
+          >
             Buy Now{" "}
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -114,7 +121,10 @@ const Product = () => {
             </span>
             IDR 10k
           </h2>
-          <button className="px-[10px] py-[10px] border-2 border-[#683824] rounded-md text-[#683824] font-semibold mt-[10px] flex items-center gap-[10px] sm:mt-[30px] sm:text-[20px]" onClick={() => navigate("/contact")}>
+          <button
+            className="px-[10px] py-[10px] border-2 border-[#683824] rounded-md text-[#683824] font-semibold mt-[10px] flex items-center gap-[10px] sm:mt-[30px] sm:text-[20px]"
+            onClick={() => (window.location.href = "https://forms.gle/WsCEmCbTMfvhFU3g8")}
+          >
             Buy Now{" "}
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

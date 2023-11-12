@@ -17,7 +17,9 @@ const Landing = () => {
           <h2 className="cursor-pointer hover:font-bold" onClick={() => navigate("/product")}>
             Product
           </h2>
-          <h2 className="cursor-pointer hover:font-bold">Packaging</h2>
+          <h2 className="cursor-pointer hover:font-bold" onClick={() => navigate("/gallery")}>
+            Gallery
+          </h2>
         </div>
         <div className="nav-right hidden sm:flex">
           <button className="px-[15px] py-[10px] border-2 rounded-lg text-[16px] font-semibold text-white bg-[#723D0F] hover:bg-transparent hover:border-[#723D0F] hover:text-[#723D0F]" onClick={() => navigate("/contact")}>
@@ -41,7 +43,9 @@ const Landing = () => {
                 </a>
               </li>
               <li>
-                <a className="flex justify-center">Packaging</a>
+                <a className="flex justify-center" onClick={() => navigate("/gallery")}>
+                  Gallery
+                </a>
               </li>
               <li>
                 <a className="flex justify-center bg-[#723D0F] text-white" onClick={() => navigate("/contact")}>
