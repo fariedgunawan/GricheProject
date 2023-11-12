@@ -92,7 +92,7 @@ const Contact = () => {
       {/*info Pickup */}
       <div className="info-pickup flex flex-col items-center mt-[60px] px-[50px] pb-[60px] sm:flex-row sm:justify-center sm:gap-[100px] sm:mt-[80px]">
         <img src={instagram} className="w-[60px] sm:w-[100px]" />
-        <button className="px-[30px] py-[5px] border-2 mt-[30px] rounded-md font-bold text-[25px]  text-[#723D0F] sm:mt-0 sm:px-[30px] sm:py-[15px]" onClick={() => (window.location.href = "https://www.instagram.com/thegriche/")}>
+        <button className="px-[30px] py-[5px]  mt-[30px] rounded-md font-bold text-[25px]  text-[#723D0F] sm:mt-0 sm:px-[30px] sm:py-[15px]" onClick={() => (window.location.href = "https://www.instagram.com/thegriche/")}>
           Visit
         </button>
       </div>
